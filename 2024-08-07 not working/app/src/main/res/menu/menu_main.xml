@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_add_page"
+        android:title="Add Page"
+        android:icon = "@drawable/add"
+        android:iconTint="@color/white"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_switch_page"
+        android:title="Switch Page"
+        android:icon="@drawable/next"
+        android:iconTint="@color/white"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_save"
+        android:title="Save"
+        android:orderInCategory="100"
+        android:icon="@drawable/save"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_delete_page"
+        android:title="Delete Page"
+        android:orderInCategory="100"
+        android:icon="@drawable/delete"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_lock"
+        android:title="Lock/Unlock"
+        android:icon="@drawable/padlock"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_zoom_to_fit"
+        android:title="Zoom to Fit"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    android:splitMotionEvents="false">
+
+    <TextView
+        android:id="@+id/pageNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <com.michelvilleneuve.m4ts.MyCustomDrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:splitMotionEvents="false">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonFreehand"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_background"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/freehand"
+            android:checkable="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonAuto"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_background"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/line"
+            android:checkable="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonRectangle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_background"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rectangle"
+            android:checkable="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonCircle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_background"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/circle"
+            android:checkable="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonArc"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_background"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arc"
+            android:checkable="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonText"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_background"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/text"
+            android:checkable="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonErase"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_background"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/erase"
+            android:checkable="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonEraseEffect"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_background"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/erase_effect"
+            android:checkable="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonClear"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_background"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/clear"
+            android:checkable="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+</LinearLayout>
